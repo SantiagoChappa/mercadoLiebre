@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+}
+header img{
+    border-bottom: 5px;
+}
+header {
+    background-color: #EAC926;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+input{
+    width: 50%;
+}
+.creditos {
+    text-align:center;
+}
+.barraHambur {
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    background-color: #1259c3;
+    padding: 7px;
+    border-radius: 5px;
+   
+}
+/* Tamaño de la letra en toda la app P*/
+p{
+    font-size: 12px;
+}
+/*Productos MAIN*/
+main{
+    width: 90%;
+    margin:auto;
+    border: 15px;
+    box-sizing: border-box;
+}
+.item-title{
+    font-weight: bold;
+}
+article img{
+    width:90%;
+    border-bottom: 2px #ebebeb solid;
+    margin-bottom: 10px;
+    display: block;
+}
+.UltimaVisita article{
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+.UltimaVisita h2{
+    font-size: 24px;
+}
+.Ofertas article{
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+#precio{
+    font-size: 18px;
+}
+#descuento{
+    color:#38C047;
+}
+main i{
+    color:#38C047;
+    border: solid black 1px;
+    padding:7px;
+    border-radius: 100px;
+}
+main p{
+    font-size: 16px;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    line-height: 20px;
+}
+footer p{
+    width: 80%;
+    margin:auto;
+}
+footer h3{
+    line-height: 5px;
+}
+footer i{
+    font-size:2em;
+    margin-top: 10px;
+    color:#1259c3;
+}
+footer .copyright{
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 40%;
+}
+/* Media quires*/
+@media (min-width: 361px){
+ .item-title {
+    display: none;
+ }
+ .navbar{
+     display: none;
+ }
+}
+
+@media (min-width: 769px){
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+     .item-title{
+         display: block;
+     }
+     .navbar{
+         display:inline-block;
+     }
+     .barraHambur{
+         display: none;
+     }
+}
+@media (min-width:1200px){
+    #logo{
+        width: 60%;
+        
+    }
+    main {
+        width: 50%;
+    }
+}
