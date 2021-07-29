@@ -1,0 +1,173 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+}
+/*header*/
+.nav-bar-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo{
+    width: 50%;
+}
+.nav-bar-top input{
+    border-radius: 5px;
+    width: 50%;
+    padding: 6px;
+    align-self: stretch;
+    border: solid 1px #ebebeb;
+}
+.nav-bar-bottom{
+    display: none;
+}
+header {
+    background-color: #EAC926;
+    padding: 15px;
+}
+.creditos {
+    align-content: center ;
+    text-align:center;
+    font-weight: 800;
+    margin: 15px
+}
+.barraHambur {
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    background-color: #1259c3;
+    padding: 7px;
+    border-radius: 5px;
+    display: block;
+    max-width: 30px;
+    margin: auto;
+}
+/* Tamaño de la letra en toda la app P*/
+p{
+    font-size: 12px;
+}
+
+/*main*/
+div{
+    margin:10px;
+}
+.control-formulario{
+    font-size: 20px;
+    font-weight: 500;
+}
+.control-formulario label{
+    display: block;
+}
+.control-input{
+    width: 95vw;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    line-height: 20px;
+}
+footer p{
+    width: 80%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+footer h3{
+    margin: auto;
+}
+footer i{
+    font-size:2em;
+    margin:10px;
+    color:#1259c3;
+    margin: auto;
+    
+}
+footer .copyright{
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 40%;
+}
+/* Media quires*/
+
+/*Tablet*/
+@media (min-width: 768px){
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+     main {
+        width: 50%;
+    }
+     .item-title{
+         display: block;
+     }
+     .nav-bar-top{
+        margin: bottom 2px; 
+     }
+     #logo{
+         width: 33%;
+         margin: 0px 4px;
+     }
+     .nav-bar-top input{
+         width: 27%;
+         align-self: center;
+         margin: 0 5px;
+     }
+     .creditos{
+         width: 36%;
+         text-align: right;
+         margin: 0px 5px;
+         align-self: center;
+     }
+     .barraHambur{
+         display: none;
+     }
+     .nav-bar-bottom{
+         display:flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+     }
+     .nav-bar-bottom ul{
+         list-style: none;
+         display: flex;
+         
+     }
+     .nav-bar-bottom li{
+         margin: 0 5px;
+     }
+     .nav-bar-bottom a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+     }
+     .contenedor2 a{
+         margin-right: 6px;
+     }
+}
+
+/*Computadora*/
+@media (min-width:1200px){
+    header{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .nav-bar-bottom{
+        font-size: 19px;
+    }
+    .nav-bar-bottom li{
+        margin: 0 10px;
+    }
+    .nav-bar-bottom a{
+        margin: 0  5px;
+    }
+    .creditos{
+        max-width: none;
+        font-size: 22px;
+    }
+    #logo{
+        width: 300px;
+    }
+}

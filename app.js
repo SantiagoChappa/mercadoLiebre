@@ -10,6 +10,14 @@ app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname, './views/home.html'))
 })
 
+app.get('/registrarse', (req,res)=>{
+    res.sendFile(path.join(__dirname, './views/register.html'))
+})
+
+app.get('/ingresar', (req,res)=>{
+    res.sendFile(path.join(__dirname, './views/login.html'))
+})
+
 app.get('*', (req, res)=>{
     res.send('NOT FOUND', 404);
 })

@@ -1,20 +1,28 @@
 * {
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 body {
     font-family: 'Roboto', sans-serif;
     background-color:#ebebeb;
 }
+/*header*/
+.nav-bar-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 #logo{
-    width: 150px;
+    width: 40vw;
+    list-style: none;
 }
 .nav-bar-top input{
-    width: 140px;
-    height: 30px;
-    display: inline;
-    margin: auto;
+    border-radius: 5px;
+    width: 40vw;
+    padding: 6px;
+    align-self: stretch;
     border: solid 1px #ebebeb;
-    display: none;
 }
 .nav-bar-bottom{
     display: none;
@@ -22,11 +30,13 @@ body {
 header {
     background-color: #EAC926;
     padding: 15px;
-    box-sizing: border-box;
+    position:fixed;
+    top: -3px;
+    z-index: 1;
 }
 .creditos {
+    align-content: center ;
     text-align:center;
-    display: block;
     font-weight: 800;
     margin: 15px
 }
@@ -43,94 +53,125 @@ header {
 }
 /* Tamaño de la letra en toda la app P*/
 p{
-    font-size: 12px;
+    font-size: 15px;
 }
-/*Productos MAIN*/
+/*main*/
+div{
+    margin:10px;
+}
 main{
-    width: 90%;
-    margin:auto;
-    border: 15px;
-    box-sizing: border-box;
+    margin: auto;
+    width: 95%;
+    margin-top: 200px;
 }
-.item-title{
-    font-weight: bold;
-    display: none;
-}
-article img{
-    width:90%;
-    border-bottom: 2px #ebebeb solid;
-    margin-bottom: 10px;
-    display: block;
-}
-.UltimaVisita article{
+#registro{
+    font-weight: 1000;
     margin: 10px;
-    padding: 15px;
-    background-color: #ffffff;
 }
-.UltimaVisita h2{
-    font-size: 24px;
+.control-formulario p{
+    font-size: 20px;
+    font-weight: bold;    
+    margin: 20px 0px;
+    
 }
-.Ofertas article{
-    margin: 10px;
-    padding: 15px;
-    background-color: #ffffff;
+.control-input{
+    width: 100%;
+    height: 10vw;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 5px;
 }
-#precio{
-    font-size: 18px;
+.control-radio{
+    margin-left: 20px;
 }
-#descuento{
-    color:#38C047;
+.control-label1{
+    margin-left: 5px;
 }
-main i{
-    color:#38C047;
-    border: solid black 1px;
-    padding:7px;
-    border-radius: 100px;
+.control-label{
+    margin-left: 5px;
+    position: relative;
+    left: 35px;
+    bottom: 15px;
 }
-main p{
-    font-size: 16px;
+label #tipo-perfil{
+    font-style: italic;
+}
+.control-checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
-/*Footer*/
+/*footer*/
 footer {
+    background-color: #ffffff;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+footer  .footer-div{
+    margin-bottom: 15px;
 }
 footer p{
     width: 80%;
     margin:auto;
+    margin-bottom: 10px;
 }
 footer h3{
-    line-height: 5px;
+    margin: auto;
 }
 footer i{
     font-size:2em;
-    margin-top: 10px;
+    margin:10px;
     color:#1259c3;
+    margin: auto;
+    
 }
 footer .copyright{
     text-align: left;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-right: 40%;
 }
 /* Media quires*/
-@media (min-width: 769px){
+
+/*Tablet*/
+@media (min-width: 768px){
+    header{
+        position: static;
+    }
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
      }
      main {
         width: 50%;
+        margin-top: 15px;
     }
      .item-title{
          display: block;
      }
+     .control-input{
+         height: 7vw;
+     }
      .nav-bar-top{
-         display: flex;
-         justify-content: space-between;
+        margin: bottom 2px; 
+     }
+     #logo{
+         width: 28vw;
+         margin: 0px 4px;
+     }
+     .nav-bar-top input{
+         width: 27%;
+         align-self: center;
+         margin: 0 5px;
      }
      .creditos{
-         max-width: 350px;
+         width: 36%;
          text-align: right;
+         margin: 0px 5px;
+         align-self: center;
      }
      .barraHambur{
          display: none;
@@ -158,10 +199,13 @@ footer .copyright{
      }
 }
 
+/*Computadora*/
 @media (min-width:1200px){
     header{
-        max-width: 1200px;
         margin: auto;
+    }
+    main{
+        margin-top: 10px;
     }
     .nav-bar-bottom{
         font-size: 19px;
@@ -178,5 +222,8 @@ footer .copyright{
     }
     #logo{
         width: 300px;
+    }
+    .control-input{
+        height: 5vw;
     }
 }
