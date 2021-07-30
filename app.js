@@ -1,6 +1,7 @@
 const express= require('express')
 const path= require('path')
 const app= express()
+const port= process.env.PORT || 3000
 const publicPath= path.join(__dirname, './public')
 
 
@@ -22,6 +23,6 @@ app.get('*', (req, res)=>{
     res.send('NOT FOUND', 404);
 })
 
-app.listen(process.env.PORT || 3000, ()=>{
-    console.log('Servidor funcionando en la url http://localhost:3000');
+app.listen(port, ()=>{
+    console.log('Servidor funcionando en el puerto '+ port);
 })
