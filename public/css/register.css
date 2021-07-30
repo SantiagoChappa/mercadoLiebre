@@ -103,6 +103,39 @@ label #tipo-perfil{
     flex-direction: column;
     margin-left: 20px;
 }
+#email, #password{
+    padding-left: 10px;
+}
+.control-boton{
+    position: relative;
+}
+#enviar, #resetear{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    padding: 8px;
+    font-size: 20px;
+    position: absolute;
+    box-shadow: 2px 2px 3px;
+    transition: all 450ms;
+}
+#enviar{
+    right: 110px;
+}
+#resetear{
+    right: 0;
+}
+#enviar:hover{
+    background-color: #1259C3;
+    color: #ffffff;
+}
+#resetear:hover{
+    background-color: #1259C3;
+    color: #ffffff;
+}
+
 
 /*footer*/
 footer {
