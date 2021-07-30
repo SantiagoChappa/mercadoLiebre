@@ -7,7 +7,7 @@
     <link href="./css/login.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f35c4fd09.js" crossorigin="anonymous"></script>
     <title>Ingresar</title>
@@ -35,81 +35,54 @@
                 </ul>
            
                 <ul class="contenedor2">    
-                  <li><a href="#">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
-                  <li><a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                  <li><a href="http://localhost:3000/registrarse">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
+                  <li><a href="http://localhost:3000/ingresar">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
                   <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
                 </ul>  
         </div>
         </header>
         
         <main>
+            <h2>Ingresar</h2>
           <form action="/crear-cuenta" method="POST">
             <div class="control-formulario">
-                <label for="nombreProducto">Nombre del producto:</label>
-                <input type="text" name="nombreProducto" id="nombreProducto" class="control-input">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="control-input" placeholder="Correo electronico">
             </div> 
             <div class="control-formulario">
-                <label for="precio">Precio:</label>
-                <input type="number" name="precio" id="precio" min="0" max="10000" class="control-input">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" class="control-input" placeholder="Contraseña">
             </div>
-
-            <div class="control-formulario">
-                <label>Categoria:</label>
-                <select>
-                    <option value="electrodomesticos">Electrodomésticos</option>
-                    <option value="hogar">Hogar</option>
-                    <option value="baño">Baño</option>
-                    <option value="indumentaria">Indumentaria</option>
-                    <option value="computadoras">Computadoras</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Ciudad:</label>
-                <select>
-                    <option value="jose-c-paz">José C. Paz</option>
-                    <option value="pilar">Pilar</option>
-                    <option value="san-miguel">San Miguel</option>
-                    <option value="muñiz">Muñiz</option>
-                    <option value="bella-vista">Bella Vista</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label for="comentario">Comentario:</label>
-                <textarea name="comentario" id="comentario" class="control-input" placeholder="Deja tu comentario..."></textarea>
-            </div>
-
-            <div class="control-formulario">
-                <label for="enOferta">Esta en Oferta:</label>
-                <input type="radio" name="enOferta" id="enOferta" multiple>
-            </div>
-
-            <div class="control-formulario">
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </div>
-          </form>
+ 
+            <div class="control-boton">
+            <button type="submit" class="enviar" id="enviar">Enviar</button>
+        </div>
+           </form>
         
     </main>
     
     <footer>
         <section>
-            
+            <div class="des-footer">
                 <i class="fa fa-credit-card"></i>
                 <h3>Pagá con tarjeta o efectivo</h3>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                     puntos de pago. ¡Y siempre es seguro!</p>
+          </div>
 
+          <div class="des-footer">
                <i class="fa fa-gift"></i>
                <h3>Envío gratis desde $ 2.500</h3>
                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
+          </div>
 
+          <div class="des-footer">
                 <i class="fa fa-user-shield"></i>
                 <h3>Seguridad, de principio a fin</h3>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>
-
-            
+          </div>
         </section>
         <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L</p>
     </footer>
