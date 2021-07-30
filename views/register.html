@@ -43,8 +43,9 @@
 
     <main>
         <h2 id="registro">Registrarse</h2>
+        <section>
         <form action="/ingresar" method="POST" class="formulario"> 
-            <section>
+            
              <div class="control-formulario">
                 <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido "class="control-input">
              </div>
@@ -81,8 +82,17 @@
 
                  <input type="checkbox" name="intereses" id="Vida-sana" value="Vida-sana" class="control-checkbox" multiple><label for="Vida-sana" class="control-label">Vida sana</label>
              </div>
-            </section>
+            
+             <div class="control-formulario">
+                 <input type="password" class="password" id="password" placeholder="Contraseña">
+                 <input type="password" class="password" id="password" placeholder="Confirmar nueva contraseña">
+             </div>
+             <div class="control-boton">
+                 <button type="submit">Enviar</button>
+                 <button type="reset">Resetear</button>
+             </div>
         </form>
+    </section>
     </main>
 
     <footer>
