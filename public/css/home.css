@@ -49,6 +49,10 @@ header {
     max-width: 30px;
     margin: auto;
 }
+#search-i{
+    border: none;
+    background-color: #FFF;
+}
 /* Tamaño de la letra en toda la app P*/
 p{
     font-size: 12px;
@@ -188,11 +192,6 @@ footer .copyright{
          width: 100%;
          margin: 10px 0px;
          display: block;
-         opacity: 0;
-         transition: all 500ms;
-     }
-     .item-title:hover{
-         opacity: 1;
      }
      .nav-bar-top{
          display: flex;
@@ -267,10 +266,17 @@ footer .copyright{
         box-shadow: none;
         width: 22%;
         display: inline-block;
-        transition: box-shadow 450ms;       
+        transition: box-shadow 0.4s;       
      }
     main article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .item-title{
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    main article:hover .item-title{
+        opacity: 1;
     }
     .primeraSection{
         margin-top: 30%;
@@ -299,5 +305,20 @@ footer .copyright{
     }
     main section article i{
         left: 180px;
+    }
+    @keyframes animacionCamion {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(-70deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+    main article:hover .item i{
+        animation-name: animacionCamion;
+        animation-duration: 2s;
     }
 }
